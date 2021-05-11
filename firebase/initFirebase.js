@@ -17,17 +17,21 @@ const clientCredentials = {
     measurementId:process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 }
 
-export default function initFirebase() {
-    if (!firebase.apps.length) {
-        firebase.initializeApp(clientCredentials)
-        // check that 'window' is in scope for the analytics module!
-        // if (typeof window !== 'undefined') {
-        //     // Enable analytics. https://firebase.google.com/docs/analytics/get-started
-        //     if ('measurementId' in clientCredentials) {
-        //         firebase.analytics()
-        //         firebase.performance()
-        //     }
-        // }
-        console.log('Firebase was sucessfully init.')
-    }
-}
+// export default function initFirebase() {
+//     if (!firebase.apps.length) {
+//         firebase.initializeApp(clientCredentials)
+//         // check that 'window' is in scope for the analytics module!
+//         // if (typeof window !== 'undefined') {
+//         //     // Enable analytics. https://firebase.google.com/docs/analytics/get-started
+//         //     if ('measurementId' in clientCredentials) {
+//         //         firebase.analytics()
+//         //         firebase.performance()
+//         //     }
+//         // }
+//         console.log('Firebase was sucessfully init.')
+//     } 
+//     console.log(firebase.app())
+//     firebase.app()
+// }
+
+export default function initFirebase() {!firebase.apps.length ? firebase.initializeApp(clientCredentials) : firebase.app()}

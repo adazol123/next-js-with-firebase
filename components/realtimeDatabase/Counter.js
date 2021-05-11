@@ -2,6 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/database'
 import { useState, useEffect } from 'react'
 
+
 const Counter =({ id }) => {
     const [count, setCount] = useState('');
 
@@ -18,8 +19,9 @@ const Counter =({ id }) => {
     }, [id]);
 
     const increaseCount = async () => {
-        const registerCount = () => fetch(`/api/incrementCount?id=${encodeURIComponent(id)}`)
+        const registerCount = () =>  fetch(`/api/incrementCount?id=${encodeURIComponent(id)}`)
         registerCount()
+        
     }
     
     return (
