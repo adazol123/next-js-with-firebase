@@ -1,9 +1,19 @@
+:root {
+  --primary: #0dc025;
+  --secondary: #0070f3;
+  --dark: #414b50;
+  --light: #eaeaea;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #414b50;
+  color: #eaeaea;
+  text-align: center;
 }
 
 a {
@@ -13,4 +23,25 @@ a {
 
 * {
   box-sizing: border-box;
+}
+nav {
+  padding: 20px;
+}
+label {
+  cursor: pointer;
+}
+#upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+label:hover {
+  border: var(--primary) solid 1px;
+  color: var(--primary);
+}
+
+nav > p {
+  line-height: 0.2em;
+  font-weight: lighter;
+
 }

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "out",
+    "site": "nextjs-firebase-adazolhub",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
