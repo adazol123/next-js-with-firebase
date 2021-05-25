@@ -1,7 +1,7 @@
 # [Next JS | Firebase Authentication](https://next-js-with-firebase-adazol.vercel.app/)
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![login with firebase](/public/login-page-with-firebase)
+![login with firebase](/public/login-page-with-firebase.png)
 
 ## Getting Started
 
